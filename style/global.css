@@ -1,0 +1,44 @@
+/* --- Variables & Global --- */
+:root {
+  --primary: #6b705c;
+  --bg-light: #fdfbf7;
+  --text-dark: #333333;
+  --white: #ffffff;
+  --transition-smooth: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  --font-serif: "Playfair Display", serif;
+  --fluid-h1: clamp(2rem, 8vw, 4.5rem);
+  --fluid-h2: clamp(1.8rem, 5vw, 3rem);
+  --fluid-p: clamp(0.9rem, 1.2vw, 1.1rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg-light);
+  font-family: "Poppins", sans-serif;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* --- Custom Elegant Scrollbar --- */
+/* Chrome, Edge, Safari and Opera */
+::-webkit-scrollbar {
+    width: 6px; /* Very thin and elegant */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-light); /* Matches the site background */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1d1d1; /* Soft grey */
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary); /* Turns olive when interacting */
+}

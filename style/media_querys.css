@@ -1,0 +1,79 @@
+/* --- Navbar Responsiva --- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+  .logo { font-size: 1.4rem; }
+  .nav-menu { display: flex; gap: 10px; }
+  .nav-link { display: none; } /* Esconde links internos em telas muito pequenas */
+  .nav-button { margin-left: 0; padding: 10px 18px; font-size: 0.7rem; }
+}
+
+/* --- Hero Section Adaptável --- */
+.hero {
+  min-height: 100svh; /* svh resolve o bug da barra de navegação no Safari/Chrome mobile */
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: var(--fluid-h1);
+  max-width: 90%;
+  margin: 0 auto 20px;
+}
+
+.hero-text {
+  font-size: var(--fluid-p);
+  padding: 0 5%;
+}
+
+/* --- Grid de Produtos Ultra-Flexível --- */
+.product-grid {
+  display: grid;
+  /* Cria colunas de no mínimo 280px, mas expande para ocupar o espaço */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(20px, 4vw, 50px);
+}
+
+/* --- Form Wrapper Responsivo --- */
+.form-wrapper {
+  padding: clamp(30px, 8vw, 80px);
+  width: 100%;
+  max-width: 900px;
+}
+
+.field-row {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* --- BREAKPOINTS ESPECÍFICOS --- */
+
+/* 1. TELAS GIGANTES (TV / Monitores Ultrawide) */
+@media (min-width: 2000px) {
+  .container { max-width: 1800px; margin: 0 auto; }
+  html { font-size: 20px; } /* Aumenta a base para tudo escalar junto */
+}
+
+/* 2. TABLETS */
+@media (max-width: 1024px) {
+  .container { padding: 80px 5%; }
+}
+
+/* 3. CELULARES PEQUENOS */
+@media (max-width: 480px) {
+  .hero-title { line-height: 1.1; }
+  .btn-explore { width: 100%; padding: 16px 20px; }
+  .image-box { height: 300px; }
+  .quote { font-size: 1.3rem; }
+}
+
+/* Telas menores que 280px */
+@media (max-width: 280px) {
+  .navbar { position: relative; flex-direction: column; padding: 10px; }
+  .nav-button { display: none; }
+  .hero-title { font-size: 1.5rem; }
+  .hero-tagline { font-size: 0.6rem; letter-spacing: 2px; }
+  .form-wrapper { padding: 15px; }
+  .preloader-logo { font-size: 1.5rem; letter-spacing: 5px; }
+  .container { padding: 40px 10px; }
+}

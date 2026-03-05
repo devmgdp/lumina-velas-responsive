@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Lumina Aromas | Ilumine seus momentos</title>
+
+    <!-- Fonts Import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/global.css" />
+    <link rel="stylesheet" href="/style/media_querys.css" />
+
+  </head>
+  <body>
+
+    <!--
+    ##########################
+      # Preloader
+    ##########################
+    -->
+    <div id="preloader">
+      <div class="preloader-content">
+        <h1 class="preloader-logo">LUMINA</h1>
+        <div class="preloader-bar"><div class="bar-progress"></div></div>
+      </div>
+    </div>
+
+    <main id="main-wrapper">
+
+    <!--
+    ##########################
+      # Navbar menu
+    ##########################
+    -->
+      <nav class="navbar">
+        <div class="logo">LUMINA</div>
+        <div class="nav-menu">
+          <a href="#products" class="nav-link">Produtos</a>
+          <a href="#contact" class="nav-link">Contato</a>
+          <a href="https://wa.me/5521988847087" class="nav-button"
+            >Encomendar</a
+          >
+        </div>
+      </nav>
+
+    <!--
+    ##########################
+      # Hero
+    ##########################
+    -->
+      <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-container">
+          <span class="hero-tagline">Artesanal & Orgânico</span>
+          <h1 class="hero-title">Ilumine seus momentos de pausa.</h1>
+          <p class="hero-text">
+            Velas de cera de coco que transformam seu ambiente em um refúgio de
+            paz.
+          </p>
+          <div class="hero-button-wrapper">
+            <a href="#products" class="btn-explore">Explorar Coleção</a>
+          </div>
+        </div>
+      </header>
+
+
+    <!--
+    ##########################
+      # Section Products
+    ##########################
+    -->
+      <section id="products" class="container">
+        <div class="section-intro reveal">
+          <h2 class="section-title">Nossas Essências</h2>
+          <div class="title-divider"></div>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card reveal">
+            <div class="image-box">
+              <div
+                class="image-bg"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1596433809252-260c2745dfdd?q=80&w=600&quot;);
+                "
+              ></div>
+              <div class="image-overlay"><span>Descobrir</span></div>
+            </div>
+            <div class="card-content">
+              <h3>Lavanda & Relaxamento</h3>
+              <p>Rituais de paz para o fim do dia.</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal">
+            <div class="image-box">
+              <div
+                class="image-bg"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?q=80&w=600&quot;);
+                "
+              ></div>
+              <div class="image-overlay"><span>Descobrir</span></div>
+            </div>
+            <div class="card-content">
+              <h3>Alecrim & Foco</h3>
+              <p>Energia pura para sua mente.</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal">
+            <div class="image-box">
+              <div
+                class="image-bg"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?q=80&w=600&quot;);
+                "
+              ></div>
+              <div class="image-overlay"><span>Descobrir</span></div>
+            </div>
+            <div class="card-content">
+              <h3>Baunilha & Aconchego</h3>
+              <p>O calor de um abraço em casa.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!--
+    ###################################
+      # Section Carousel | Feedbacks
+    ###################################
+    -->
+      <section class="testimonials">
+        <div class="carousel-container">
+          <div class="slide active">
+            <p class="quote">
+              "O aroma de Lavanda transformou minhas noites. É pura paz!"
+            </p>
+            <span class="author">— Mariana S.</span>
+          </div>
+          <div class="slide">
+            <p class="quote">
+              "Design minimalista que combina com qualquer canto da casa."
+            </p>
+            <span class="author">— Beatriz L.</span>
+          </div>
+        </div>
+      </section>
+
+
+    <!--
+    ############################
+      # SECTION CONTACT FORM
+    ############################
+    -->
+      <section id="contact" class="container">
+        <div class="form-wrapper reveal">
+          <div class="form-header">
+            <h2>Dúvidas ou Encomendas?</h2>
+            <p>Sinta-se à vontade para nos enviar uma mensagem.</p>
+          </div>
+
+          <form
+            action="https://formspree.io/f/mykngdwe"
+            method="POST"
+            id="mainContactForm"
+          >
+            <div class="field-row">
+              <div class="floating-group">
+                <input
+                  type="text"
+                  name="nome"
+                  id="userName"
+                  placeholder=" "
+                  required
+                />
+                <label>Seu nome</label>
+              </div>
+              <div class="floating-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="userEmail"
+                  placeholder=" "
+                  required
+                />
+                <label>Seu e-mail</label>
+              </div>
+            </div>
+            <div class="floating-group">
+              <textarea
+                name="mensagem"
+                id="userMessage"
+                placeholder=" "
+                required
+              ></textarea>
+              <label>Como podemos ajudar?</label>
+            </div>
+            <button type="submit" class="btn-send">Enviar Mensagem</button>
+            <div id="formStatus" class="status-msg hidden"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- JavaScript Import -->
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
